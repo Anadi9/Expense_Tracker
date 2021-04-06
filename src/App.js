@@ -5,17 +5,20 @@ import Balance from './components/Balance';
 import Transaction from './components/Transaction';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header';
+import { GlobalProvider } from './context/GlobalState';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Container style={{ backgroundColor: '#27496d'}} classroom="projectContainer">
-        <Balance />
-        <Transaction />
-        <AddTransaction />
-      </Container>
-    </div>
+    <GlobalProvider>
+      <div className="App">
+        <Header />
+        <Container style={{ backgroundColor: '#27496d' }} classroom="projectContainer">
+          <Balance />
+          <Transaction />
+          <AddTransaction />
+        </Container>
+      </div>
+    </GlobalProvider>
   );
 }
 

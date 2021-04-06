@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-color: #142850;
-  height: 100vh;
+  height: max-content;
 }
 
 .header_title {
@@ -16,12 +16,25 @@ h3 {
 .bal_exp {
   padding: 50;
   background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px #000;
 }
 
-.bal {
-  background-color: rgba(255, 255, 255, 0.4);
+.inc {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .exp {
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.minus {
+  border-right-width: 5px;
+  border-right-color: red;
+  border-right-style: solid;
+}
+
+.add {
+  border-right-width: 5px;
+  border-right-color: green;
+  border-right-style: solid;
 }
